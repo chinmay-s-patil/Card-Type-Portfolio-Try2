@@ -1,4 +1,4 @@
-import ExperienceNormalized from './components/ExperienceNormalized'
+import ExperienceNormalized from './sections/ExperienceNormalized'
 
 export default function Page() {
   return (
