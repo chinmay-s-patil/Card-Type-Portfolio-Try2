@@ -1,17 +1,34 @@
+import NavDots from './components/NavDots'
+import Header from './components/Header'
 import ExperienceNormalized from './sections/ExperienceNormalized'
+import SkillsNormalized from './sections/SkillsNormalized'
+import Footer from './components/Footer'
+import './page.css'
+
+const sectionsMeta = [
+  { id: 'experience', label: 'Experience' },
+  { id: 'skills', label: 'Skills' }
+]
 
 export default function Page() {
   return (
-    <ExperienceNormalized>
-      <div style={{ maxWidth: '1400px', margin: '0 auto', padding: '0 32px' }}>
-        <h1 style={{ fontSize: '56px', marginBottom: '24px', fontWeight: '700' }}>
-          Responsive Container Demo
-        </h1>
-        <p style={{ fontSize: '18px', lineHeight: '1.6', maxWidth: '65ch' }}>
-          This container automatically scales its content based on viewport size.
-          Base reference is 1920x1080.
-        </p>
-      </div>
-    </ExperienceNormalized>
+    <>
+      <Header />
+      <NavDots sections={sectionsMeta} />
+      
+      <main id="sections" className="scroll-container" aria-label="Portfolio sections">
+        <section id="experience" className="section">
+          <ExperienceNormalized />
+        </section>
+        
+        <section id="skills" className="section">
+          <SkillsNormalized />
+        </section>
+        
+        <section id="contact" className="section" style={{ minHeight: 'auto', height: 'auto', padding: 0 }}>
+          <Footer />
+        </section>
+      </main>
+    </>
   )
 }
