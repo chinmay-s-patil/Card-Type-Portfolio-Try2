@@ -89,8 +89,8 @@ export default function ResponsiveContainer({ children, className = '', style = 
             height: '30px',
             border: '3px dotted #00ff00',
             borderRadius: '8px',
-            marginTop: '80px',
-            marginLeft: '80px'
+            marginTop: '0px',
+            marginLeft: '0px'
           }}
         />
 
@@ -102,7 +102,7 @@ export default function ResponsiveContainer({ children, className = '', style = 
             border: '3px dotted #ffffff',
             borderRadius: '8px',
             marginTop: '20px',
-            marginLeft: '80px'
+            marginLeft: '0px'
           }}
         />
 
@@ -114,21 +114,21 @@ export default function ResponsiveContainer({ children, className = '', style = 
             border: '3px dotted #808080',
             borderRadius: '8px',
             marginTop: '20px',
-            marginLeft: '80px'
+            marginLeft: '0px'
           }}
         />
 
         {/* Rest of Content Area - Purple box */}
         <div
           style={{
-            width: 'calc(100% - 160px)',
+            width: '100%',
             flex: '1',
             border: '3px dotted #9933ff',
             borderRadius: '8px',
             marginTop: '40px',
-            marginLeft: '80px',
-            marginBottom: '80px',
-            marginRight: '80px'
+            marginLeft: '0px',
+            marginBottom: '0px',
+            marginRight: '0px'
           }}
         />
       </div>

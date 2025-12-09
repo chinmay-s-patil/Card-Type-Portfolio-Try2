@@ -1,8 +1,8 @@
-import ResponsiveContainer from './components/ResponsiveContainer'
+import ExperienceNormalized from './components/ExperienceNormalized'
 
 export default function Page() {
   return (
-    <ResponsiveContainer>
+    <ExperienceNormalized>
       <div style={{ maxWidth: '1400px', margin: '0 auto', padding: '0 32px' }}>
         <h1 style={{ fontSize: '56px', marginBottom: '24px', fontWeight: '700' }}>
           Responsive Container Demo
@@ -12,6 +12,6 @@ export default function Page() {
           Base reference is 1920x1080.
         </p>
       </div>
-    </ResponsiveContainer>
+    </ExperienceNormalized>
   )
 }
