@@ -43,9 +43,9 @@ export default function ResponsiveContainer({ children, className = '', style = 
         style={{
           position: 'absolute',
           top: '40px',
-          left: '40px',
-          width: '250px',
-          height: '80px',
+          left: '0',
+          width: '200px',
+          height: '60px',
           border: '3px dotted #ff0000',
           borderRadius: '8px'
         }}
@@ -58,7 +58,7 @@ export default function ResponsiveContainer({ children, className = '', style = 
           top: '50%',
           right: '0',
           transform: 'translateY(-50%)',
-          width: '200px',
+          width: '80px',
           height: '500px',
           border: '3px dotted #ff0000',
           borderRadius: '8px'
@@ -76,39 +76,59 @@ export default function ResponsiveContainer({ children, className = '', style = 
           height: '900px',
           border: '3px dotted #ff0000',
           borderRadius: '8px',
-          padding: '60px',
+          padding: '0',
           display: 'flex',
           flexDirection: 'column',
-          gap: '30px'
+          gap: '0'
         }}
       >
         {/* Kicker - Small green text area */}
         <div
           style={{
-            width: '300px',
-            height: '40px',
+            width: '250px',
+            height: '30px',
             border: '3px dotted #00ff00',
-            borderRadius: '8px'
+            borderRadius: '8px',
+            marginTop: '80px',
+            marginLeft: '80px'
           }}
         />
 
         {/* Title - Big bold title area */}
         <div
           style={{
-            width: '100%',
-            height: '120px',
+            width: '900px',
+            height: '100px',
             border: '3px dotted #ffffff',
-            borderRadius: '8px'
+            borderRadius: '8px',
+            marginTop: '20px',
+            marginLeft: '80px'
           }}
         />
 
         {/* About Section - 1-2 lines description */}
         <div
           style={{
-            width: '100%',
-            height: '80px',
+            width: '900px',
+            height: '60px',
             border: '3px dotted #808080',
-            borderRadius: '8px'
+            borderRadius: '8px',
+            marginTop: '20px',
+            marginLeft: '80px'
+          }}
+        />
+
+        {/* Rest of Content Area - Purple box */}
+        <div
+          style={{
+            width: 'calc(100% - 160px)',
+            flex: '1',
+            border: '3px dotted #9933ff',
+            borderRadius: '8px',
+            marginTop: '40px',
+            marginLeft: '80px',
+            marginBottom: '80px',
+            marginRight: '80px'
           }}
         />
       </div>
