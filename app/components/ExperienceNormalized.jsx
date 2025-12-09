@@ -86,16 +86,16 @@ export default function Experience() {
           width: BASE_WIDTH,
           height: BASE_HEIGHT,
           position: 'relative',
-          margin: '0 auto'
+          margin: '0 auto',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center'
         }}
       >
-        {/* Content positioned absolutely within scaled container */}
+        {/* Content positioned relatively within scaled container */}
         <div
           style={{
-            position: 'absolute',
-            top: '50%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)',
+            position: 'relative',
             width: '1400px',
             height: '900px',
             display: 'flex',
